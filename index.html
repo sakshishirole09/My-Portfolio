@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sakshi Shirole | Full Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Sakshi Shirole: Full Stack and PHP developer, CodeIgniter 4, MySQL, MERN stack, AI-powered applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="grid" aria-hidden="true"></canvas>
+  <div class="orb orb-a" aria-hidden="true"></div>
+  <div class="orb orb-b" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav-wrap" id="top">
+    <nav class="nav" aria-label="Main">
+      <a href="#hero" class="logo" aria-label="Sakshi Shirole, home">SS</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"
+        aria-controls="links"><span></span><span></span><span></span></button>
+      <ul class="links" id="links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#patent">Patent</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="SAKSHI SHIROLE RESUME.pdf" download class="nav-resume">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-text">
+        <p class="hero-tag">// Full Stack Developer. PHP. MERN. AI integrations.</p>
+        <h1 class="hero-name">Sakshi<br><span class="grad">Shirole</span></h1>
+        <p class="typed-line">I build <span id="typed" class="typed"></span><span class="caret"
+            aria-hidden="true"></span></p>
+        <p class="hero-sub">
+          M.Sc. Computer Science graduate with a 6-month web developer internship. I build database-driven applications
+          with
+          <strong>PHP, CodeIgniter 4 and MySQL</strong>, connect them to <strong>OpenAI and Google PageSpeed
+            APIs</strong>,
+          and ship full-stack apps on the <strong>MERN stack</strong>.
+        </p>
+        <div class="badges">
+          <span>PHP</span><span>CodeIgniter
+            4</span><span>MySQL</span><span>JavaScript</span><span>React.js</span><span>Node.js</span><span>WordPress</span>
+        </div>
+        <div class="cta">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          <a href="SAKSHI_SHIROLE_RESUME.pdf" download class="btn btn-text">Download resume</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/sakshishirole09" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/sakshi-shirole-508616289/" target="_blank" rel="noopener"
+            aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:sakshibshirole@gmail.com" aria-label="Email">Email</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Profile summary">
+        <div class="card-bar"><i></i><i></i><i></i><span>sakshi.profile.js</span></div>
+        <pre class="code"><span class="k">const</span> <span class="v">sakshi</span> = {
+  <span class="p">role</span>: <span class="s">"Full Stack / PHP Developer"</span>,
+  <span class="p">location</span>: <span class="s">"Nashik, India"</span>,
+  <span class="p">education</span>: <span class="s">"M.Sc. Computer Science"</span>,
+  <span class="p">cgpa</span>: <span class="n">8.69</span>,
+  <span class="p">stack</span>: [<span class="s">"PHP"</span>, <span class="s">"CI4"</span>, <span class="s">"MySQL"</span>,
+          <span class="s">"React"</span>, <span class="s">"Node"</span>, <span class="s">"MongoDB"</span>],
+  <span class="p">published</span>: {
+    <span class="p">patent</span>: <span class="s">"IN202621024900 A1"</span>,
+    <span class="p">paper</span>: <span class="s">"Scienxt Journal"</span>
+  },
+  <span class="p">openToWork</span>: <span class="n">true</span>
+};</pre>
+      </aside>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats reveal" aria-label="Highlights">
+      <div class="stat"><b data-count="6">6</b><span>months internship</span></div>
+      <div class="stat"><b data-count="3">3</b><span>featured projects</span></div>
+      <div class="stat"><b data-count="1">1</b><span>published patent application</span></div>
+      <div class="stat"><b data-count="1">1</b><span>peer-reviewed paper</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="sec">
+      <div class="head reveal">
+        <p class="label">// about</p>
+        <h2>Who I am</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>I'm <strong>Sakshi Shirole</strong>, a Full Stack and PHP developer from Nashik. During my 6-month
+            internship at CodingBit IT Solutions I built and maintained database-driven applications, integrated REST
+            and external APIs, fixed bugs across development stages, and deployed live sites on cPanel and Hostinger.
+          </p>
+          <p>I also build on my own: <strong>RepoLens</strong> is a MERN application that uses the GitHub and OpenAI
+            APIs to review any repository, deployed on Vercel and Render.</p>
+          <p>Beyond web development, I'm a <strong>co-inventor of a published patent application</strong> on secure
+            digital identity and the author of a <strong>peer-reviewed paper</strong> on blockchain-based health
+            records.</p>
+        </div>
+        <ul class="about-points">
+          <li><b>Build</b><span>Database-driven apps with PHP, CodeIgniter 4 and MySQL</span></li>
+          <li><b>Integrate</b><span>OpenAI, Google PageSpeed and GitHub APIs</span></li>
+          <li><b>Deploy</b><span>cPanel, Hostinger, Vercel and Render, with Git and GitHub</span></li>
+          <li><b>Research</b><span>Patent application and journal publication</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="sec">
+      <div class="head reveal">
+        <p class="label">// skills</p>
+        <h2>Technical arsenal</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="feat-row reveal">
+        <div class="feat">
+          <div class="ico">PHP</div>
+          <h3>PHP and CodeIgniter 4</h3>
+          <p>MVC back ends, Core PHP</p>
+        </div>
+        <div class="feat cyan">
+          <div class="ico">JS</div>
+          <h3>MERN stack</h3>
+          <p>React, Node, Express, MongoDB</p>
+        </div>
+        <div class="feat">
+          <div class="ico">AI</div>
+          <h3>API integration</h3>
+          <p>OpenAI, PageSpeed, GitHub</p>
+        </div>
+        <div class="feat cyan">
+          <div class="ico">WP</div>
+          <h3>WordPress and SEO</h3>
+          <p>Maintenance, technical SEO</p>
+        </div>
+      </div>
+      <div class="cats reveal">
+        <div class="cat">
+          <h3>Backend</h3>
+          <div class="tags"><span>PHP</span><span>CodeIgniter 4</span><span>Core
+              PHP</span><span>Node.js</span><span>Express.js</span><span>RESTful APIs</span><span>MVC</span></div>
+        </div>
+        <div class="cat">
+          <h3>Frontend</h3>
+          <div class="tags">
+            <span>React.js</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Axios</span><span>Responsive
+              design</span></div>
+        </div>
+        <div class="cat">
+          <h3>Databases and APIs</h3>
+          <div class="tags"><span>MySQL</span><span>MongoDB</span><span>phpMyAdmin</span><span>OpenAI
+              API</span><span>Google PageSpeed API</span><span>GitHub API</span></div>
+        </div>
+        <div class="cat">
+          <h3>CMS and SEO</h3>
+          <div class="tags"><span>WordPress</span><span>Technical SEO</span><span>Website optimization</span></div>
+        </div>
+        <div class="cat">
+          <h3>Tools and deployment</h3>
+          <div class="tags">
+            <span>Git</span><span>GitHub</span><span>cPanel</span><span>Hostinger</span><span>Vercel</span><span>Render</span><span>XAMPP</span>
+          </div>
+        </div>
+        <div class="cat">
+          <h3>Practices</h3>
+          <div class="tags"><span>Debugging</span><span>Application testing</span><span>Website
+              maintenance</span><span>Production deployment</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="sec">
+      <div class="head reveal">
+        <p class="label">// experience</p>
+        <h2>Where I've worked</h2>
+        <div class="rule"></div>
+      </div>
+      <ol class="timeline">
+        <li class="tl reveal">
+          <span class="node"></span>
+          <div class="tl-card">
+            <div class="tl-top">
+              <h3>Web Developer Intern</h3><span class="date">Jan 2026 to Jun 2026</span>
+            </div>
+            <p class="org">CodingBit IT Solutions, Nashik</p>
+            <ul>
+              <li>Developed and maintained database-driven web applications using PHP, CodeIgniter 4 and MySQL.</li>
+              <li>Integrated REST and external APIs, including the OpenAI API and Google PageSpeed API.</li>
+              <li>Debugged and tested functionality, fixing issues across development stages.</li>
+              <li>Maintained live client websites, including WordPress, with optimization and technical SEO
+                improvements.</li>
+              <li>Deployed on cPanel and Hostinger; managed code with Git and GitHub.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="tl reveal">
+          <span class="node cyan"></span>
+          <div class="tl-card">
+            <div class="tl-top">
+              <h3>OJT Trainee, Web Development</h3><span class="date">On-the-job training</span>
+            </div>
+            <p class="org">YSM Info Solutions</p>
+            <ul>
+              <li>Built a News Clipping Management System for a Municipal Corporation with Core PHP and MySQL.</li>
+              <li>Developed responsive pages, then tested, debugged and optimized the frontend, backend and database
+                integration.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="sec">
+      <div class="head reveal">
+        <p class="label">// projects</p>
+        <h2>Things I've built</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="proj-grid">
+        <article class="proj big tilt reveal">
+          <div class="proj-top"><span class="pill">Internship project</span><a class="ext"
+              href="https://github.com/sakshishirole09" target="_blank" rel="noopener">Repository</a></div>
+          <h3>SEOBIT</h3>
+          <p class="sub">AI-powered SEO analysis platform</p>
+          <ul>
+            <li>Crawls a website and its sitemap, audits on-page SEO and produces an SEO score, with crawl history in
+              MySQL.</li>
+            <li>Google PageSpeed API for mobile and desktop performance; OpenAI API for generated SEO recommendations;
+              report feature.</li>
+            <li>Debugged and tested the crawling, configuration and API workflows; deployed on Hostinger.</li>
+          </ul>
+          <div class="tags sm"><span>PHP</span><span>CodeIgniter
+              4</span><span>MySQL</span><span>JavaScript</span><span>OpenAI API</span><span>PageSpeed API</span></div>
+        </article>
+
+        <article class="proj big tilt reveal">
+          <div class="proj-top"><span class="pill cyan">Personal full-stack project</span>
+            <span class="ext-row"><a class="ext" href="https://repo-lens.vercel.app/" target="_blank"
+                rel="noopener">Live demo</a><a class="ext" href="https://github.com/sakshishirole09/RepoLens"
+                target="_blank" rel="noopener">Repository</a></span>
+          </div>
+          <h3>RepoLens</h3>
+          <p class="sub">AI-powered GitHub repository analyzer</p>
+          <ul>
+            <li>React dashboard with a REST API back end that analyzes repositories: stats, languages, contributors,
+              activity, README, community, activity and risk scores, and a health grade.</li>
+            <li>GitHub API for data; OpenAI API for reviews, summaries, strengths, weaknesses and suggestions.</li>
+            <li>MongoDB analysis history, PDF report export, deployed on Vercel and Render.</li>
+          </ul>
+          <div class="tags sm">
+            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>GitHub
+              API</span><span>OpenAI API</span><span>Axios</span></div>
+        </article>
+
+        <article class="proj wide tilt reveal">
+          <div class="proj-top"><span class="pill">OJT project</span></div>
+          <h3>News Clipping Management System</h3>
+          <p class="sub">For a Municipal Corporation, YSM Info Solutions</p>
+          <p>Responsive pages with Core PHP and MySQL database operations, tested, debugged and optimized across the
+            frontend, backend and database.</p>
+          <div class="tags sm"><span>Core
+              PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+      </div>
+      <p class="more reveal">Also built: Admin Dashboard, Image Management System, Student Registration System.</p>
+    </section>
+
+    <!-- PATENT -->
+    <section id="patent" class="sec">
+      <div class="head reveal">
+        <p class="label">// patent</p>
+        <h2>Published patent application</h2>
+        <div class="rule"></div>
+      </div>
+      <article class="showcase reveal">
+        <div class="sc-top">
+          <span class="status gold">Published, not granted</span>
+          <span class="sc-id">Pub. No. IN202621024900 A1</span>
+        </div>
+        <div class="sc-body">
+          <div class="sc-main">
+            <p class="sc-kind">Indian patent application</p>
+            <h3>Computer-implemented system for empowering digitally resilient India by leveraging technology</h3>
+            <p>I am the applicant and a co-inventor. The application proposes a future-ready, secure digital identity
+              framework made of four connected parts.</p>
+          </div>
+          <dl class="sc-meta">
+            <div>
+              <dt>Application no.</dt>
+              <dd>202621024900</dd>
+            </div>
+            <div>
+              <dt>Filed</dt>
+              <dd>02 March 2026</dd>
+            </div>
+            <div>
+              <dt>Published</dt>
+              <dd>24 April 2026</dd>
+            </div>
+            <div>
+              <dt>Role</dt>
+              <dd>Applicant and co-inventor</dd>
+            </div>
+          </dl>
+        </div>
+        <ul class="pillars">
+          <li><span class="pn">1</span><b>Biometric verification</b>AI-driven multimodal verification with presentation
+            attack detection</li>
+          <li><span class="pn">2</span><b>Identity lifecycle</b>Permissioned blockchain-based identity lifecycle
+            management</li>
+          <li><span class="pn">3</span><b>Post-quantum security</b>Post-quantum cryptography to keep identities safe
+            long term</li>
+          <li><span class="pn">4</span><b>Privacy by design</b>Selective disclosure using zero-knowledge proofs</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="sec">
+      <div class="head reveal">
+        <p class="label">// research</p>
+        <h2>Research publication</h2>
+        <div class="rule"></div>
+      </div>
+      <article class="showcase paper reveal">
+        <div class="sc-top">
+          <span class="status cyan">Peer-reviewed journal paper</span>
+          <span class="sc-id">ISSN 2583-9209</span>
+        </div>
+        <div class="sc-body">
+          <div class="sc-main">
+            <p class="sc-kind">Scienxt Journal of Computer Science and Information Technology, Vol. 4, Issue 2</p>
+            <h3>Navigating interoperability in blockchain-integrated electronic health records: challenges, benchmarks,
+              and evaluation perspectives</h3>
+            <p>A study of how blockchain-based health record systems can exchange data, covering the main
+              interoperability challenges, benchmarks and ways to evaluate them.</p>
+            <div class="tags sm"><span>Blockchain</span><span>Electronic health
+                records</span><span>Interoperability</span><span>Benchmarks</span></div>
+            <a class="btn btn-primary mt" href="https://doi.org/10.5281/zenodo.21128041" target="_blank"
+              rel="noopener">Read the paper (DOI)</a>
+          </div>
+          <dl class="sc-meta">
+            <div>
+              <dt>DOI</dt>
+              <dd>10.5281/zenodo.21128041</dd>
+            </div>
+            <div>
+              <dt>Journal ISSN</dt>
+              <dd>2583-9209</dd>
+            </div>
+            <div>
+              <dt>Volume and issue</dt>
+              <dd>Vol. 4, Issue 2</dd>
+            </div>
+            <div>
+              <dt>Certificate ref.</dt>
+              <dd>C37/SJ001/2026</dd>
+            </div>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="sec">
+      <div class="head reveal">
+        <p class="label">// education</p>
+        <h2>Academic background</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="edu-grid reveal">
+        <article class="edu"><span class="yr">2024 to 2026</span>
+          <h3>M.Sc. Computer Science</h3>
+          <p>K.K. Wagh ACS &amp; CS College, Nashik</p><span class="cgpa">CGPA 8.69</span>
+        </article>
+        <article class="edu"><span class="yr">2021 to 2024</span>
+          <h3>Bachelor of Computer Science</h3>
+          <p>K.K. Wagh Arts, Commerce &amp; Science College, Pimpalgaon (B)</p><span class="cgpa">CGPA 8.64</span>
+        </article>
+        <article class="edu"><span class="yr">Languages</span>
+          <h3>English, Hindi, Marathi</h3>
+          <p>English fluent</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="sec">
+      <div class="head reveal">
+        <p class="label">// contact</p>
+        <h2>Let's build something</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="c-left">
+          <p class="c-sub">I'm open to full-time roles, internships, collaborations and interesting projects. Send a
+            message and I'll reply by email.</p>
+          <ul class="c-list">
+            <li><a href="mailto:sakshibshirole@gmail.com"><span>Email</span>sakshibshirole@gmail.com</a></li>
+            <li><a href="tel:+919373789718"><span>Phone</span>+91 93737 89718</a></li>
+            <li><a href="https://www.linkedin.com/in/sakshi-shirole-508616289/" target="_blank"
+                rel="noopener"><span>LinkedIn</span>sakshi-shirole-508616289</a></li>
+            <li><a href="https://github.com/sakshishirole09" target="_blank"
+                rel="noopener"><span>GitHub</span>sakshishirole09</a></li>
+            <li>
+              <div class="plain"><span>Location</span>Nashik, Maharashtra, India</div>
+            </li>
+          </ul>
+        </div>
+        <form id="contactForm" novalidate>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name"
+              required><small class="err" data-for="name"></small></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email"
+              autocomplete="email" required><small class="err" data-for="email"></small></div>
+          <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text"
+              placeholder="Optional"></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"
+              required></textarea><small class="err" data-for="message"></small></div>
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit" id="sendBtn">Send message</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>&copy; <span id="year"></span> Sakshi Shirole. Built with HTML, CSS and JavaScript.</p>
+    <a href="#hero">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
